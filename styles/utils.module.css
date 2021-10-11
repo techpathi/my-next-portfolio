@@ -1,0 +1,166 @@
+.headerFont {
+  font-family: 'Andada Pro', serif;
+}
+
+.subHeaderFont {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+.container {
+  max-width: 80vw;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
+
+.heroContainer {
+  display: inline-flex;
+}
+
+.heroTextBlock {
+  width: 50%;
+}
+
+.heroImageBlock {
+  margin-top: 10%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1076px) {
+  .heroContainer {
+    display: inline-block;
+  }
+  .heroTextBlock {
+    width: 100%;
+  }
+  .heroImageBlock {
+    width: 90%;
+  }
+}
+
+.centerText {
+  text-align: center;
+}
+
+.projectContainer {
+  width: 80vw;
+  margin: 2em 1em;
+}
+.projectGrid,
+.skillGrid {
+  display: grid;
+  gap: 1.5em;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .projectGrid,
+  .skillGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .skillGrid {
+    margin-left: 10%;
+  }
+}
+
+.projectCard {
+  margin: 30px auto;
+  width: 90%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+  padding: 1em;
+}
+
+.projectCard:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+
+.projectCard .appLink {
+  color: #3b3940;
+  font-family: 'Andada Pro', serif;
+  font-size: large;
+  float: right;
+}
+
+.projectCard .appLink::after {
+  content: '⤴';
+  margin-left: 0.5em;
+}
+
+.skillRow {
+  display: inline-flex;
+  width: 90%;
+  height: 60px;
+  max-width: 80vw;
+  color: rgb(31, 41, 55);
+  font-family: 'Hind Siliguri', sans-serif;
+  padding: 0.5em;
+  border-radius: 20px;
+  border: 2px solid rgb(31, 41, 55);
+}

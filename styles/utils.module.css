@@ -80,7 +80,7 @@
 }
 
 .heroImageBlock {
-  margin-top: 10%;
+  margin-top: 2%;
   width: 50%;
 }
 
@@ -141,6 +141,20 @@
     -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
 }
 
+.projectCard .badgeLinkBlock {
+  display: inline-flex;
+}
+
+.projectCard .badge {
+  border: 1px solid rgb(31, 41, 55);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #4e5161;
+  color: whitesmoke;
+  float: left;
+}
+
 .projectCard .appLink {
   color: #3b3940;
   font-family: 'Andada Pro', serif;
@@ -163,4 +177,21 @@
   padding: 0.5em;
   border-radius: 20px;
   border: 2px solid rgb(31, 41, 55);
+}
+
+.socialGrid {
+  display: flex;
+  padding: 1em;
+  justify-content: center;
+}
+
+.socialGrid > * {
+  margin-right: 4em;
+}
+
+.socialGrid > *:hover {
+  transform: scale(1.1);
+  border: solid black 2px;
+  border-radius: 10px;
+  transition: ease-in 500ms;
 }
